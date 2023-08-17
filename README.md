@@ -1,2 +1,2 @@
 # mattcory6000.github.io
-"Hello, World!"
+I'm just practicing basic HTML and maybe some javascript.
