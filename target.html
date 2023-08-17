@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Page</title>
+</head>
+<body>
+  <h1>User Information</h1>
+  <p id="userInfo"></p>
+
+  <script>
+    // Extract URL parameters
+    var params = new URLSearchParams(window.location.search);
+
+    var firstname = params.get('firstname');
+    var lastname = params.get('lastname');
+
+    // Display the information
+    document.getElementById('userInfo').innerText = 'First: ' + firstname + '\nLast: ' + lastname;
+  </script>
+</body>
+</html>
