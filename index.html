@@ -3,25 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form</title>
+  <title>Form Submission</title>
 </head>
 <body>
-  <form id="loginForm">
-    <input ype="password" name="lastname" placeholder="Last Name" id="firstname" required>
-    <input type="password" name="lastname" placeholder="Last Name" id="lastname" required>
+  <form action="target.html" method="get">
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" id="firstName" required>
+    <br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" id="lastName" required>
+    <br>
     <input type="submit" value="Go">
   </form>
-
-  <script>
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      var firstname = document.getElementById('firstname').value;
-      var lastname = document.getElementById('lastname').value;
-
-      // Redirect to the target page with the firstname and lastname as URL parameters
-      window.location.href = 'target.html?firstname=' + encodeURIComponent(username) + '&lastname=' + encodeURIComponent(password);
-    });
-  </script>
 </body>
 </html>
