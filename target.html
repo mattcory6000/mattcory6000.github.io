@@ -7,17 +7,16 @@
 </head>
 <body>
   <h1>User Information</h1>
-  <p id="userInfo"></p>
-
   <script>
     // Extract URL parameters
     var params = new URLSearchParams(window.location.search);
 
-    var firstname = params.get('firstname');
-    var lastname = params.get('lastname');
+    var firstName = params.get('firstName');
+    var lastName = params.get('lastName');
 
     // Display the information
-    document.getElementById('userInfo').innerText = 'First: ' + firstname + '\nLast: ' + lastname;
+    document.write('First Name: ' + firstName + '<br>');
+    document.write('Last Name: ' + lastName);
   </script>
 </body>
 </html>
