@@ -1,2 +1,2 @@
-# mattcory6000.github.io
-I'm just practicing basic HTML and maybe some javascript.
+This is a simple web app that scans UPC barcodes and returns the numeric form of the UPC.
+The script itself is used in the order-entry and inventory-count tools of my wine-distributor ERP.
